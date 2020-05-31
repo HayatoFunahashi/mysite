@@ -1,7 +1,7 @@
 var map;
 var tokyo;
 var osaka;
-var APIKEY = AIzaSyCc_UDQf7wKx_5WkwRIYKKUnnwjcI2XTLM;
+var APIKEY = "AIzaSyCc_UDQf7wKx_5WkwRIYKKUnnwjcI2XTLM";
 
 function initMap() {
   tokyo = new google.maps.LatLng(35.689614,139.691585);
