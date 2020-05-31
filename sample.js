@@ -1,9 +1,23 @@
+var map;
+var tokyo;
+var osaka;
+
 function initMap() {
+  tokyo = new google.maps.LatLng(35.689614,139.691585);
+  osaka = new google.maps.LatLng(34.686272,135.519649);
+
   var opts = {
     zoom: 15,
-    center: new google.maps.LatLng(35.1253694,136.9073667)
+    center: tokyo
   };
-  var map = new google.maps.Map(document.getElementById("map"), opts);
+
+  map = new google.maps.Map(document.getElementById("map"), opts);
 }
 
-var APIKEY = AIzaSyCc_UDQf7wKx_5WkwRIYKKUnnwjcI2XTLM
+function setTokyo() {
+  map.setCenter(tokyo);
+}
+
+function setOsaka() {
+  map.setCenter(osaka);
+}

@@ -5,15 +5,23 @@
     <title>Google Maps API サンプル</title>
   </head>
   <body>
-    <p>熱田神宮です。</p>
+
+    <p>東京都庁と大阪府庁</p>
 
     <div id="map" style="width:620px; height:400px"></div>
+
+    <form>
+    <p>
+    <input type="button" value="東京" onclick="setTokyo()">
+    <input type="button" value="大阪" onclick="setOsaka()">
+    </p>
+    </form>
 
     <script type="text/javascript" src="sample.js">
     </script>
 
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?language=en&key=APIKEY&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc_UDQf7wKx_5WkwRIYKKUnnwjcI2XTLM&callback=initMap">
     </script>
   </body>
 </html>
