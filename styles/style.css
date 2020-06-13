@@ -1,3 +1,154 @@
-p {
-  color: red;
+@charset "utf-8";
+/* CSS Document */
+
+body{
+font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+margin:0;
+color:#313131;
+}
+
+/*****HEADER*****/
+header{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-size:140%; /*フォントサイズの調整*/
+    color:#313131; /*文字色の変更*/
+    padding: 10px; /*文字上部に余白*/
+    border:1px solid #313131; /*文字の周りに線を描く*/
+    border-radius: 5px; /*線の角に丸みを付ける*/
+    letter-spacing: 5px; /*文字と文字の間隔をあける*/
+    font-weight:400; /*文字の太さの変更*/
+}
+
+#headlogo{
+outline:none;
+border-style:none;
+vertical-align: middle;
+height: 50px;
+}
+
+/*Header end*/
+
+
+
+/*Footer end*/
+a{
+    color:blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:visited{
+    color:blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:hover {
+    color: #F5A862;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/*****NAV*****/
+nav{
+    width: 100%;
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+nav ul{
+    width: 60%;
+    margin-left: 20%;
+}
+nav li{
+    width: calc(25% - 2px);
+    font-size: 110%;
+    letter-spacing: 5px;
+    font-weight: 400;
+    line-height: 45px;
+    border-left: 1px solid orange;
+    color: #313131;
+    cursor: pointer;
+    text-align: center;
+    float: left;
+}
+nav li:last-child{
+    border-right: 1px solid orange;
+}
+
+nav li:hover{
+    background-color: orange;
+    transition: background-color 0.5s ease-out;
+    color: #fff;
+}
+
+/*****MAIN*****/
+main{
+display: flex;
+margin: 5px;
+height: 600px;
+}
+
+main .mapdiv{
+  width: 100%;
+  margin: 10px;
+}
+
+main .Panel{
+  width: 350px;
+  height: 600px;
+  margin: 10px;
+}
+
+main .Operate{
+  margin: 5px;
+  padding: 5px;
+  height: 200px;
+  border:1px solid #313131; /*文字の周りに線を描く*/
+  border-radius: 5px; /*線の角に丸みを付ける*/
+}
+
+main .Result{
+  margin: 5px;
+  height: 350px;
+  border:1px solid #313131; /*文字の周りに線を描く*/
+  border-radius: 5px; /*線の角に丸みを付ける*/
+  overflow-y: scroll;
+}
+
+main .pic{
+  width: 300px;
+  background-color: gray;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    margin: 5px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%; /*フォントサイズの指定*/
+    width: 100%;    /*横幅の指定*/
+    text-align: center; /*文字の中央寄せ*/
+    padding-top: 10px;  /*文字上部の余白指定*/
+    padding-bottom: 10px;   /*文字下部の余白指定*/
+    background-color: #313131;  /*背景色の指定*/
+}
+footer small{
+    color: #fff;    /*文字色の指定*/
+    letter-spacing: 5px;    /*文字と文字の間隔をあける*/
+    font-style: normal; /*文字の斜体を取り消す*/
+}
+
+footer address{
+    color: #fff;
+    letter-spacing: 5px;
 }
